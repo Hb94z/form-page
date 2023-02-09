@@ -1,0 +1,84 @@
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+  
+.flex-item {
+
+    background: rgba(249, 249, 249, 0.834); 
+    width: 1000px;
+    height: 600px;
+}
+
+.blex-item1 {
+
+    background: blue;
+    flex-grow: 4;
+    width: auto;
+    height: auto;
+    color: white;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+form {
+  
+   box-sizing: border-box;
+   box-shadow: 0 3px 2px -2px gray;
+   margin-bottom: 5px;
+   margin-top: 5px;
+   background-color: white;
+}
+
+.inputbox {
+
+  box-sizing: border-box;
+}
+
+label {
+
+  box-sizing: border-box;
+}
+
+.field {
+
+  box-sizing: border-box;
+}
+
+#set1 {
+  
+  width: 450px;
+  height: 200px;     
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+#quote {
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+}
+
+#buttonstuff {
+
+    margin-top: 10px;
+
+}
