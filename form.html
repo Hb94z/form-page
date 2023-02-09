@@ -9,14 +9,20 @@
 </head>
 <body>
     <div class="flex-container">
-        <div class="blex-item1">1</div>
+        <div class="flex-item1">
+            <div id="logo-box">Logo</div>
+        </div>
         <div class="flex-item">
           <div class="formbox">
-            <div id="quote">
-              <span>lots of text lots of textlots of text lots of text</span>
-              <span>more text</span>
+            <div id="quote-box">
+              <span class="text">lots of text lots of textlots of text lots of text lots of text lots of textlots of text lots of text
+                lots of text lots of textlots of text lots of textlots of text lots of textlots of text lots of text.
+              </span>
+              <span class="text">More text.</span>
+              
             </div>
             <form action="http://httpbin.org/post" method="post">
+                <legend>Fill in here:</legend>
               <div id="set1">
                    <div class="inputbox">
                       <label for="first_name">First Name:</label>
@@ -62,9 +68,9 @@
             
               </div>
             </form>
-            <div id="buttonstuff">
-              <button id="clickhere">click here</button>
-              <span id="buttontext">more text</span>
+            <div id="button-container">
+              <button>click here</button>
+              <span>more text</span>
             </div>
 
           </div>
