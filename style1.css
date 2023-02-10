@@ -1,18 +1,11 @@
+:root {
+    --skyblue: rgb(45, 117, 110);
+}
+
 .flex-container {
-    /* We first create a flex layout context */
+
     display: flex;
-    
-    /* Then we define the flow direction 
-       and if we allow the items to wrap 
-     * Remember this is the same as:
-     * flex-direction: row;
-     * flex-wrap: wrap;
-     */
     flex-flow: row wrap;
-    
-    /* Then we define how is distributed the remaining space */
-    
-    
     padding: 0;
     margin: 0;
     list-style: none;
@@ -22,12 +15,14 @@
 
     background: rgba(249, 249, 249, 0.834); 
     width: 1000px;
-    height: 600px;
+    height: 100vh;
 }
 
 .flex-item1 {
 
     background: blue;
+    background-image: url("./images/bgimg1.jpg");
+    background-size: auto;
     flex-grow: 4;
     width: auto;
     height: auto;
@@ -45,24 +40,31 @@ form {
    box-sizing: border-box;
    box-shadow: 0 3px 2px -2px gray;
    margin-bottom: 5px;
+   padding-bottom: 70px;
    margin-top: 5px;
    background-color: white;
+   font-weight: bold;
 
 }
 
 .inputbox {
 
   box-sizing: border-box;
+
 }
 
 label {
 
   box-sizing: border-box;
+  font-size: 12px;
+  color:rgb(37, 37, 37)
+
 }
 
 .field {
 
   box-sizing: border-box;
+
 }
 
 #set1 {
@@ -71,35 +73,42 @@ label {
   height: 200px;     
   display:flex;
   flex-wrap: wrap;
+  gap: 60px;
   margin-left: 50px;
+
 }
 
 
 #quote-box {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 50px;
     margin-left: 50px;
     box-sizing: border-box;
-    width: 400px;
+    width: 600px;
+    color: rgb(26, 26, 26);
+    font-size: 20px;
 
 }
 
 #button-container {
 
-    margin-top: 30px;
-    margin-left: 50px;
-    box-sizing: border-box;
-    width: 100px;
+    margin-top: 20px;
+    width: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
 
 }
+
 legend {
     box-sizing: border-box;
     margin-left: 48px;
     margin-bottom: 20px;
+    font-size: 18px;
+    margin-top: 10px;
     
-
 }
 
 #logo-box {
@@ -108,9 +117,68 @@ legend {
     background-color: black;
     color: white;
     margin-bottom: 20px;
-   
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+
 }
 
 .text {
- margin-top: 20px;
+   margin-top: 20px;
+   font-weight: bold;
+ 
 }
+
+button {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--skyblue);
+    border-radius: 4px;
+    outline: none;
+    border-style: none;
+    height: 40px;
+    
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--skyblue);
+  border-radius: 5px;
+  box-shadow: 0 3px 20px -2px gray;
+  border-style: solid;
+  outline: none;
+  
+}
+
+input,
+textarea {
+
+    border-radius: 5px;
+    border-color: grey;
+    border-style: solid;
+  
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    
+}
+
+a:link {
+    color: var(--skyblue);
+    outline: none;
+    text-decoration: none;
+    margin-left: 2px;
+
+}
+
+a:hover {
+ 
+    text-decoration: underline;
+    
+  }
